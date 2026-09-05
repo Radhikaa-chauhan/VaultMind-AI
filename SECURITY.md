@@ -2,9 +2,9 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in PaySentry, please report it responsibly.
+If you discover a security vulnerability in VaultMind AI, please report it responsibly.
 
-**Email:** yangzk01@gmail.com
+**Email:** radhikachauhanrc1980@gmail.com
 
 **Do NOT open a public issue for security vulnerabilities.**
 

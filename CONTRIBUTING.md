@@ -1,18 +1,18 @@
-# Contributing to PaySentry
+# Contributing to VaultMind AI
 
-Thank you for your interest in contributing to PaySentry.
+Thank you for your interest in contributing to VaultMind AI.
 
 ## Prerequisites
 
 - Node.js 20+
 - TypeScript knowledge
-- Familiarity with payment processing concepts
+- Familiarity with payment risk and fraud detection concepts
 
 ## Setup
 
 ```bash
-git clone https://github.com/MichaelYangzk/paysentry.git
-cd paysentry
+git clone https://github.com/Radhikaa-chauhan/VaultMind-AI.git
+cd VaultMind-AI
 npm install
 npm run build
 ```
@@ -27,12 +27,14 @@ npm test
 
 ```
 packages/
-  core/       # Core payment validation and fraud detection logic
-  react/      # React hooks and components
-  node/       # Node.js server-side utilities
+  core/       # Core types, events, and persistence
+  control/    # Deterministic policy engine and rule sets
+  observe/    # Fraud-spike detection model, spend tracker, and alerts
+  protect/    # Dispute and provenance audit trail
+  dashboard/  # Express API and React console UI
 ```
 
-Each package is independently versioned and published under the `@paysentry` scope.
+Each package is independently versioned and published under the `@vaultmind` scope.
 
 ## Development Workflow
 

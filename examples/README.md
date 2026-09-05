@@ -1,6 +1,6 @@
-# PaySentry Examples
+# VaultMind AI Examples
 
-Runnable examples demonstrating each PaySentry pillar.
+Runnable examples demonstrating VaultMind AI and fraud detection.
 
 ## Prerequisites
 

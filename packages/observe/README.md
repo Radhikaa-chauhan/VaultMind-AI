@@ -2,7 +2,7 @@
 
 Payment observability for AI agents. Track what agents spend, where, and why — across x402, ACP, AP2, and Visa TAP.
 
-Part of [PaySentry](https://github.com/mkmkkkkk/paysentry).
+Part of [VaultMind AI](https://github.com/Radhikaa-chauhan/VaultMind-AI).
 
 ## Install
 

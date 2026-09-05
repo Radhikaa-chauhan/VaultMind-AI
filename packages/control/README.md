@@ -2,7 +2,7 @@
 
 Declarative policy engine for AI agent payment control. Set spending limits, enforce budgets, require human approval — all without touching your agent code.
 
-Part of [PaySentry](https://github.com/mkmkkkkk/paysentry).
+Part of [VaultMind AI](https://github.com/Radhikaa-chauhan/VaultMind-AI).
 
 ## Install
 

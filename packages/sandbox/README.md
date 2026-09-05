@@ -2,7 +2,7 @@
 
 Mock payment protocols for testing AI agent payments without real money. Simulate x402, ACP, and AP2 with configurable latency, failure rates, and edge cases.
 
-Part of [PaySentry](https://github.com/mkmkkkkk/paysentry).
+Part of [VaultMind AI](https://github.com/Radhikaa-chauhan/VaultMind-AI).
 
 ## Install
 

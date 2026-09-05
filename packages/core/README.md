@@ -1,6 +1,6 @@
 # @vaultmind/core
 
-Core types, configuration, and shared utilities for [PaySentry](https://github.com/mkmkkkkk/paysentry) — the open-source control plane for AI agent payments.
+Core types, configuration, and shared utilities for [VaultMind AI](https://github.com/Radhikaa-chauhan/VaultMind-AI) — fraud-spike detector for Indian merchant payments.
 
 ## Install
 

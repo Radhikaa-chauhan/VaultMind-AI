@@ -2,7 +2,7 @@
 
 Dispute resolution, provenance tracking, and recovery for AI agent payments. Know exactly what happened, prove it, and get your money back.
 
-Part of [PaySentry](https://github.com/mkmkkkkk/paysentry).
+Part of [VaultMind AI](https://github.com/Radhikaa-chauhan/VaultMind-AI).
 
 ## Install
 

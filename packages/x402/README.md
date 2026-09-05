@@ -1,6 +1,6 @@
 # @vaultmind/x402
 
-x402 protocol adapter for PaySentry. Adds spending limits, circuit breakers, and full observability to HTTP 402 payments made by AI agents.
+x402 protocol adapter for VaultMind AI. Adds spending limits, circuit breakers, and full observability to HTTP 402 payments made by AI agents.
 
 ## Quick Start
 
