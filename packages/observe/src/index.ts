@@ -1,0 +1,35 @@
+// =============================================================================
+// @vaultmind/observe — Public API
+// Payment observability for AI agents
+// =============================================================================
+
+export { SpendTracker } from './tracker.js';
+export type { TransactionFilter } from './tracker.js';
+
+export { SpendAnalytics } from './analytics.js';
+export type { SpendSummary, TimeSeriesPoint, AgentAnalytics } from './analytics.js';
+
+export { SpendAlerts } from './alerts.js';
+export type {
+  AlertRule,
+  AlertRuleConfig,
+  BudgetThresholdConfig,
+  LargeTransactionConfig,
+  RateSpikeConfig,
+  NewRecipientConfig,
+  AnomalyConfig,
+} from './alerts.js';
+
+export {
+  FraudSpikeScorer,
+  FLAG_THRESHOLD,
+  BLOCK_THRESHOLD,
+  featuresFromMetadata,
+} from './fraud-spike.js';
+export type { PaymentFeatures, PaymentMethod, RiskAction, RiskScore } from './fraud-spike.js';
+
+export { generateFraudDataset, splitTrainTest, EVAL_MERCHANTS } from './fraud-dataset.js';
+export type { LabeledPayment } from './fraud-dataset.js';
+
+export { evaluateFraudSpike, getCachedFraudEval } from './fraud-eval.js';
+export type { FraudEvalReport, ConfusionCounts } from './fraud-eval.js';

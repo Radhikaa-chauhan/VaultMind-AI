@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build core
+        run: cd packages/core && npx tsc --build --force
+
+      - name: Build control
+        run: cd packages/control && npx tsc --build --force
+
+      - name: Build observe
+        run: cd packages/observe && npx tsc --build --force
+
+      - name: Build protect
+        run: cd packages/protect && npx tsc --build --force
+
+      - name: Build sandbox
+        run: cd packages/sandbox && npx tsc --build --force
+
+      - name: Build wallet
+        run: cd packages/wallet && npx tsc --build --force
+
+      - name: Build x402
+        run: cd packages/x402 && npx tsc --build --force
+
+      - name: Build demo
+        run: cd packages/demo && npx tsc --build --force
+
+      - name: Run tests
+        run: npm test

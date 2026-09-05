@@ -1,0 +1,35 @@
+{
+  "name": "vaultmind",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VaultMind AI — fraud-spike detector for Indian merchant payments (Razorpay Buildathon Track 02)",
+  "workspaces": [
+    "packages/*",
+    "packages/dashboard/frontend",
+    "examples/mcp-payment-server"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/core && npm run build -w packages/control -w packages/observe -w packages/protect -w packages/sandbox && npm run build -w packages/x402 -w packages/wallet -w packages/a2a -w packages/demo && npm run build -w packages/mcp -w packages/dashboard && npm run build -w packages/dashboard/frontend",
+    "test": "node --import tsx --test packages/*/test/*.test.ts",
+    "lint": "eslint packages/*/src/**/*.ts",
+    "typecheck": "tsc --build packages/*/tsconfig.json",
+    "clean": "npm run clean --workspaces --if-present",
+    "demo": "tsx examples/live-demo.ts",
+    "dev:ui": "npm run dev -w packages/dashboard/frontend",
+    "eval:risk": "tsx examples/eval-fraud-spike.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Radhikaa-chauhan/VaultMind-AI.git"
+  }
+}

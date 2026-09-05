@@ -1,0 +1,23 @@
+{
+  "name": "paysentry-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive CLI demo — see PaySentry block, approve, and audit AI agent payments in real-time",
+  "bin": {
+    "paysentry-demo": "./dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "@vaultmind/core": "*",
+    "@vaultmind/control": "*",
+    "@vaultmind/observe": "*",
+    "@vaultmind/sandbox": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
